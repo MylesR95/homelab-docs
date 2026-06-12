@@ -43,8 +43,9 @@ Default gateway has been left blank intentionally, as we are in "Internal Networ
 
 
 **06/06/2026**
-**Goals:** > Install Active Directory Domain Services role
-                  >> Promote DC01 to a Domain Controller
-                  >>> Create my first domain (homelab.local)
-                  >>>> Create my first domain user account
+**Goals:** 
+> Install Active Directory Domain Services role
+> >> Promote DC01 to a Domain Controller
+>>> Create my first domain (homelab.local)
+>>>> Create my first domain user account
 
