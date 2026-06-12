@@ -1,15 +1,14 @@
 # Progress Notes
 
-
 **Purpose:** Session-to-session documentation of what I have done, learnt, broke or fixed for the purpose of education and training. The practice of record keeping being vital for learning from mistakes and a point of reference for future tickets.
 
-
+___
 
 **04/06/2026**
-**Goals:** >Create a Windows Server 2022 VM using VirtualBox
-                  >> Network configured (static IP)
-                  >>> Computer rename to reflect Domain Controller
-                  >>>>
+**Goals:**
+>Create a Windows Server 2022 VM using VirtualBox
+>> Network configured (static IP)
+>>> Computer rename to reflect Domain Controller
 
 
 Using VirtualBox, I deployed a Windows Server 2022 VM, configuring it with 4GB RAM, 64 GB storage and dedicated 2 CPU processors for the purpose of acting as a Domain Controller. 
@@ -19,13 +18,7 @@ This is because I dont want the DC to talk directly to my home router just yet. 
 
 Upon booting for the first time, using the Server Manager in Windows Server, I firstly renamed the PC to "DC01" and configured the static IP address.
 
-
-
 <img width="991" height="362" alt="image" src="https://github.com/user-attachments/assets/af0e54e3-8f4c-4027-911f-e1c8251739b4" />
-
-
-
-
 
 <img width="412" height="575" alt="image" src="https://github.com/user-attachments/assets/e53a2148-fae2-41d5-9f69-2e295cabea1c" />
 
@@ -42,10 +35,19 @@ It is set to itself to be able to answer queries from client computers such as "
 Default gateway has been left blank intentionally, as we are in "Internal Network" mode. Further on I will either add a second network adapter or change network modes to give the DC internet access.
 
 
+--- 
+
+
 **06/06/2026**
 **Goals:** 
-> Install Active Directory Domain Services role
-> >> Promote DC01 to a Domain Controller
->>> Create my first domain (homelab.local)
->>>> Create my first domain user account
+> Install Active Directory Domain Services (AS DS) role
+>>> Promote DC01 to a Domain Controller
+>>> Create a domain (homelab.local)
+>>>> Create the domain user account
+
+**note**
+* Domain name: homelab.local
+* Login showed HOMELAB/Administrator after reboot
+
+<img width="1241" height="462" alt="image" src="https://github.com/user-attachments/assets/ba228c88-e65c-4493-bb74-f312a0c29267" />
 
