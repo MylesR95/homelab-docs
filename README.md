@@ -5,8 +5,26 @@ A grouping of my homelab experience thus far.
 **Purpose:** Concurrent with my studies, I have created this homelab to simulate a real world small-to-medium business IT environment to the best of my abilities. Configurations, breakages, and fixes are all documented here with the aim to develop hands-on skills for a Level 1 Help Desk / IT Suppoer role. 
 
 **Status:**`[Active]`
-**Last Update:**`[03-06-2026]`
+**Last Update:**`[12-06-2026]`
 
 ---
 
 ## Lab Overview
+
+
+
+
+
+
+
+
+---
+# Glossary List 
+
+| Term	| Definition |
+| --- | --- |
+| Forest |	Security boundary, top-level container |
+| Domain	| Namespace and administrative boundary |
+| Tree	| A set of domains with contiguous DNS names |
+| OU | Container for users/computers within a domain |
+| Global Catalog | Searchable index of all objects in the forest |
