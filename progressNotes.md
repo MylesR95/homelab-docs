@@ -29,15 +29,15 @@ Upon booting for the first time, using Server Manager in Windows Server, I first
 <img width="412" height="575" alt="image" src="https://github.com/user-attachments/assets/e53a2148-fae2-41d5-9f69-2e295cabea1c" />
 </div>
 
-### Why a static IP?
+### Myles, why a static IP?
 
-Assigned a static IP address (192.168.10.10) instead of DHCP. Domain Controllers require a static IP for two reasons:
+I assigned a static IP address (192.168.10.10) instead of DHCP. Domain Controllers require a static IP for two reasons:
 
 1. Client computers store the DC's IP address in their DNS cache and network configuration. A changing IP would break name resolution and domain trust.
 
 2. The DC runs the DNS Server role, which must be bound to a fixed address. DHCP lease expiration or renewal would cause DNS failures across the entire domain.
 
-If the IP ever changed, client computers would not be able to locate the DC to authenticate and log in.
+Remember, If the IP ever changed, client computers would not be able to locate the DC to authenticate and log in.
 
 - `192.168.X.X` is a private IP range and safe for internal network use
 - `.10` is a common subnet for small businesses
