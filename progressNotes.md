@@ -4,6 +4,7 @@
 
 ---
 
+### Set up the environment using Virtual Box
 ## 04/06/2026
 
 ### Goals
@@ -56,7 +57,7 @@ At this moment, DNS is not installed yet. Setting it to `127.0.0.1` (itself) pre
 The default gateway has been left blank intentionally because the VM is in **Internal Network** mode. Later, I will either add a second network adapter or change network modes to give the DC internet access.
 
 ---
-
+### Set up Domain Controller and domain
 ## 06/06/2026
 
 ### Goals
@@ -67,7 +68,7 @@ The default gateway has been left blank intentionally because the VM is in **Int
   - Create the first domain user account
 
 
-Created homelab.local as a new forest to establish a completely independent Active Directory environment.
+Created homelab.local as a new forest to establish a completely independent Active Directory environment. 
 In my small deployment lab, the forest and the domain share the same name (`homelab.local`). A larger company deployment may have a forest named `companyExample.com` with domains like `us.company.Example.com` or `au.company.com` etc.
 
 
@@ -78,19 +79,24 @@ In my small deployment lab, the forest and the domain share the same name (`home
 
 <img width="1241" height="462" alt="image" src="https://github.com/user-attachments/assets/ba228c88-e65c-4493-bb74-f312a0c29267" />
 
-
+### Organisational Units, users, groups
 ## 06/06/2026
 
 ### Goals
 
-- Create Organizational Units (Sales, HR, IT)
+- Create Organisational Units (Sales, HR, IT)
 - Create users within said OUs
 - Create groups for permission management and add users to groups
 
 <img width="1080" height="456" alt="image" src="https://github.com/user-attachments/assets/2c7a74f9-8231-434b-b487-9c386c015b5f" />
 
+---
 
+### Group Policy
+## 07/06/2026
 
+### Goals
 
+- 
 
 
